@@ -4,7 +4,7 @@
 ## Lenguajes de marcas y sistemas de gestión de información
 ## IES Aguadulce
 ## 1ºDAW
-## 
+## https://jesusga20.github.io/tarea2practica-git/
 
 Uso de Git mediante la terminal git bash. Las instrucciones y sus resultados deben mostrar como
 bloques de código markdown:
@@ -69,32 +69,8 @@ $ git branch -v
 
 ```
 ### Subir el repositorio a Github (push) 
-subo todos los documentos nuevos al repositorio con el mismo proceso que antes para luego subir todo a *github* con el comando **push**
+subo todos los documentos nuevos al repositorio con los botones del **visual studio** del control de codigo fuente, para luego subir todo a *github* con el comando **push**
 ```
-maniana@DAMDAW1-09 MINGW64 ~/Desktop/tarea2practica-git (master)
-$ git status 
-On branch master
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   README.md
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        capturas-tarea/
-
-no changes added to commit (use "git add" and/or "git commit -a")
-
-maniana@DAMDAW1-09 MINGW64 ~/Desktop/tarea2practica-git (master)
-$ git add .
-
-maniana@DAMDAW1-09 MINGW64 ~/Desktop/tarea2practica-git (master)
-$ git commit -m "añado los nuevos cambios"
-[master bd918ca] añado los nuevos cambios
- 3 files changed, 45 insertions(+), 11 deletions(-)
- create mode 100644 "capturas-tarea/a\303\261ado al profe.png"
- create mode 100644 capturas-tarea/creacion-repositorio.png
-
 maniana@DAMDAW1-09 MINGW64 ~/Desktop/tarea2practica-git (master)
 $ git status 
 On branch master
@@ -120,10 +96,12 @@ To https://github.com/jesusGA20/tarea2practica-git.git
 antes que nada creo la carpeta **docs** con el archivo **index** dentro
 
 ### Configurar el repositorio para que publique el directorio raíz en Github Pages.
-
+para esto, he cliqueado en *settings*, luego en *pages*, y en la parte de *branch*, colocamos en master y elegimos el archivo /docs y le damos a save
+![](capturas-tarea/pages.png)
 
 ### Mostrar los despliegues (deployments).
-
+compruevo que se haya subido bien los desplieges
+![](/capturas-tarea/deployments.png)
 ### Mostrar la página web.
+![](/capturas-tarea/pagina-web.png)
 
-### Añadir en el primer apartado, Identificación, el enlace a la publicación del sitio web.
