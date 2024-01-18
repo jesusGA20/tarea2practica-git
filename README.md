@@ -111,7 +111,9 @@ entramos en el **control de codigo fuente** y cliqueamos en el mas que aparece a
 
 ### Subir el repositorio a Github,
 tras el paso anterior que he esplicado, en el mismo sitio escribimos el mensaje que describe lo que se sube, tras lo cual cliqueamos en confirmar y luego le damos a subir
-### Comprobar que está subido a Github y
-
-
+### Comprobar que está subido a Github 
+tras subir el repositario podemos ver los cambios en gihtub, como en este caso que podemos apreciar los cambios en la documentacion
+![](/capturas-tarea/cambios.png)
 ### Ver el listado de commit desde Github.
+aqui podemos apreciar los commit realizados en **github**
+![](/capturas-tarea/los-commits.png)
