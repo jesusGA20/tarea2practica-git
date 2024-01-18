@@ -105,3 +105,13 @@ compruevo que se haya subido bien los desplieges
 ### Mostrar la página web.
 ![](/capturas-tarea/pagina-web.png)
 
+## Uso de Git mediante la interfaz de VSCode:
+### Creación de otro commit,
+entramos en el **control de codigo fuente** y cliqueamos en el mas que aparece al lado de del archivo que queremos subir
+
+### Subir el repositorio a Github,
+tras el paso anterior que he esplicado, en el mismo sitio escribimos el mensaje que describe lo que se sube, tras lo cual cliqueamos en confirmar y luego le damos a subir
+### Comprobar que está subido a Github y
+
+
+### Ver el listado de commit desde Github.
