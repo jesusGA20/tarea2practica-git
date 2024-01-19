@@ -5,44 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>la tienda del zorro</title>
+    <style>
+        body{
+            background-color:rgb(247, 247, 236)
+        }
+        .cabecera {
+            background-image: url(/docs/img/fondo.jpg);
+            background-size: cover;
+            height: 935px;
+            margin: -8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: greenyellow;
+            text-align: center;
+            margin-top: 0px;
+            padding-top: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            border: 1px solid greenyellow;
+            padding: 10px 25px;
+            display: inline-block;
+            width: 20%;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            margin: 11%;
+            margin-top: 5%;
+            border-radius: 50%;
+            background-color: rgb(8, 194, 8);
+        }
+
+
+        img {
+            width: 95%;
+        }
+
+        figure {
+            display: inline-block;
+            width: 23%;
+            text-align: center;
+            margin: 0;
+            margin-left:18%;
+            margin-bottom: 1%;
+            border: 1px solid greenyellow;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+            width: 50%;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px 5px;
+            text-align: center;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <div class="cabecera">
         <h1>la tienda del zorro</h1>
-        <a href="">referencia1</a>
-        <a href="">referencia2</a>
-        <a href="">referencia3</a>
+        <a href="#secion1">referencia1</a>
+        <a href="#secion2">referencia2</a>
+        <a href="#secion3">referencia3</a>
     </div>
-    <div class="secion1">
+    <div id="secion1">
         <h2>secion principal</h2>
         <p>lo que voy a vender seran cosas estilo D&D</p>
         <figure>
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="/docs/img/espada-medieval-boker-magnum-ferrum.jpg" alt="">
+            <figcaption>espada paladin</figcaption>
         </figure>
         <figure>
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="/docs/img/hacha-medieval-de-mano.jpg" alt="">
+            <figcaption>hacha corta</figcaption>
+        </figure>
+        <br>
+        <figure>
+            <img src="/docs/img/pocinv.jpg" alt="">
+            <figcaption>pocion de vida</figcaption>
         </figure>
         <figure>
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="/docs/img/pocionM.jpg" alt="">
+            <figcaption>pocion de mana</figcaption>
+        </figure>
+        <br>
+        <figure>
+            <img src="/docs/img/escudo-medieval-redondo.jpg" alt="">
+            <figcaption>escudo</figcaption>
         </figure>
         <figure>
-            <img src="" alt="">
-            <figcaption></figcaption>
-        </figure>
-        <figure>
-            <img src="" alt="">
-            <figcaption></figcaption>
-        </figure>
-        <figure>
-            <img src="" alt="">
-            <figcaption></figcaption>
+            <img src="/docs/img/armadura.jpeg" alt="">
+            <figcaption>armadura</figcaption>
         </figure>
     </div>
-    <div>
+    <div id="secion2">
         <h2>productos</h2>
         <table>
             <thead>
@@ -54,15 +124,9 @@
             </thead>
             <tbody>
                 <tr>
+                    <td> <img src="/docs/img/espada-medieval-boker-magnum-ferrum.jpg" alt=""></td>
                     <td></td>
-                    <td></td>
-                    <td rowspan="2" class="TA"></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
+                    <td rowspan="2" class="TA">armas</td>
                     <td></td>
                     <td></td>
                 </tr>
@@ -71,10 +135,15 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
+                    <td></td>
+                    <td rowspan="2" class="TB">pociones</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -91,7 +160,7 @@
         </table>
     </div>
     <div>
-        <h2>cuestionario</h2>
+        <h2 id="secion3">cuestionario</h2>
         <form action="">
             <label for="nombre">nombre completo</label>
             <input type="text" id="nombre">
