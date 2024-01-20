@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>la tienda del zorro</title>
     <style>
-        body{
-            background-color:rgb(247, 247, 236)
+        body {
+            background-color: rgb(247, 247, 236)
         }
+
         .cabecera {
-            background-image: url(./docs/img/fondo.jpg);
+            background-image: url("./img/fondo.jpg");
             background-size: cover;
             height: 935px;
             margin: -8px;
@@ -48,7 +49,7 @@
             width: 23%;
             text-align: center;
             margin: 0;
-            margin-left:18%;
+            margin-left: 18%;
             margin-bottom: 1%;
             border: 1px solid greenyellow;
         }
@@ -64,12 +65,46 @@
             border: 1px solid black;
             padding: 10px 5px;
             text-align: center;
+            background-color: brown;
         }
 
         td {
             border: 1px solid black;
             padding: 10px 20px;
             text-align: center;
+            background-color: chartreuse;
+        }
+        form{
+            border: 1px solid black;
+            padding: 20px;
+            background-color: rgb(36, 240, 63);
+            width: 50%;
+
+        }
+        fieldset{
+            background-color: white;
+        }
+        legend{
+            border: 1px solid black;
+            background-color: black;
+            text-align: center;
+            padding: 0px 15%;
+            color: white;
+        }
+        label{
+            display: inline-block;
+            width: 20%;
+        }
+      
+        textarea {
+            vertical-align: top;
+        }
+        button,
+        input[type=submit],input[type=reset] {
+            cursor: pointer;
+
+            margin-left: 5%;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -83,31 +118,32 @@
     </div>
     <div id="secion1">
         <h2>secion principal</h2>
-        <p>lo que voy a vender seran cosas estilo D&D</p>
+        <p>bien benidos aventureros a la tienda del zorro, aqui podeis encontrar todo lo necesario para buestra aventura, a un buen precio y calidad</p>
+<!--no se me ocurria que hacer asii que me puse a vender como si fuera una tienda de un videojuego-->
         <figure>
-            <img src="./docs/img/espada-medieval-boker-magnum-ferrum.jpg" alt="">
+            <img src="./img/espada-medieval-boker-magnum-ferrum.jpg" alt="">
             <figcaption>espada paladin</figcaption>
         </figure>
         <figure>
-            <img src="./docs/img/hacha-medieval-de-mano.jpg" alt="">
+            <img src="./img/hacha-medieval-de-mano.jpg" alt="">
             <figcaption>hacha corta</figcaption>
         </figure>
         <br>
         <figure>
-            <img src="./docs/img/pocinv.jpg" alt="">
+            <img src="./img/pocinv.jpg" alt="">
             <figcaption>pocion de vida</figcaption>
         </figure>
         <figure>
-            <img src="./docs/img/pocionM.jpg" alt="">
+            <img src="./img/pocionM.jpg" alt="">
             <figcaption>pocion de mana</figcaption>
         </figure>
         <br>
         <figure>
-            <img src="./docs/img/escudo-medieval-redondo.jpg" alt="">
+            <img src="./img/escudo-medieval-redondo.jpg" alt="">
             <figcaption>escudo</figcaption>
         </figure>
         <figure>
-            <img src="./docs/img/armadura.jpeg" alt="">
+            <img src="./img/armadura.jpeg" alt="">
             <figcaption>armadura</figcaption>
         </figure>
     </div>
@@ -123,40 +159,40 @@
             </thead>
             <tbody>
                 <tr>
-                    <td> <img src="./docs/img/espada-medieval-boker-magnum-ferrum.jpg" alt=""></td>
+                    <td> <img src="./img/espada-medieval-boker-magnum-ferrum.jpg" alt=""></td>
                     <td>espada</td>
                     <td rowspan="2" class="TA">armas</td>
                     <td>arma corto punzante de una o dos manos</td>
                     <td>5 oros</td>
                 </tr>
                 <tr>
-                    <td><img src="./docs/img/hacha-medieval-de-mano.jpg" alt=""></td>
-                    /*porque no ban las malditas imagenes?*/
+                    <td><img src="./img/hacha-medieval-de-mano.jpg" alt=""></td>
+                    <!--porque no ban las malditas imagenes? -->
                     <td>hacha</td>
-                    <td>arma cortante contundente</td>
+                    <td>arma cortante contundente de una mano</td>
                     <td>3 oros</td>
                 </tr>
                 <tr>
-                    <td><img src="./docs/img/pocinv.jpg" alt=""></td>
+                    <td><img src="./img/pocinv.jpg" alt=""></td>
                     <td>pocion de vida</td>
                     <td rowspan="2" class="TB">pociones</td>
                     <td>cura 5 de salud y es dulce</td>
-                   
+
                     <td>1 oro</td>
                 </tr>
                 <tr>
-                    <td><img src="./docs/img/pocionM.jpg" alt=""></td>
+                    <td><img src="./img/pocionM.jpg" alt=""></td>
                     <td>pocion de mana</td>
                     <td>recupera 5 de mana y te despierta al darte energia</td>
-                     /*necesito 20 de estas ahora*/
+                    <!--necesito 20 de estas ahora-->
                     <td>2 oro</td>
                 </tr>
                 <tr>
-                    <td><img src="./docs/img/armadura.jpeg" alt=""></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><img src="./img/armadura.jpeg" alt=""></td>
+                    <td>armadura de escamas</td>
+                    <td>armadura</td>
+                    <td>armadura hecha de placas y escamas de acero</td>
+                    <td>10 oro</td>
                 </tr>
             </tbody>
         </table>
@@ -183,13 +219,13 @@
                 <option value="">frances</option>
             </select>
             <br>
-            <label for="categoria">categoria</label>
+            <label for="categoria">categorias</label>
             <input type="checkbox" id="miopcion1">
-            <label for="miopcion1"></label>
+            <label for="miopcion1">armas</label>
             <input type="checkbox" id="miopcion2">
-            <label for="miopcion2"></label>
+            <label for="miopcion2">pociones</label>
             <input type="checkbox" id="miopcion3">
-            <label for="miopcion3"></label>
+            <label for="miopcion3">armaduras</label>
             <br>
             <label for="preguntas">preguntas</label>
             <textarea name="" id="preguntas" cols="" rows=""></textarea>
